@@ -1,10 +1,10 @@
 <html>
 <body>  
-<h1>virtual - ticketing - JS UTM</h1>
+<h1>virtual - 2fa - JS UTM</h1>
 <br />
 <div id='amEmbRegForm'></div>
 <br /><br /><br /><br />
 
-<script async defer>window.onload=function(){var t=document.getElementById("amEmbRegForm");if(t&&t.appendChild){var e=document.createElement("iframe");e.setAttribute("src","https://sc-208189-embedded-reg-form-parent-ticket.test.airmeet.com/widgets/event/6136de00-4274-11ef-b32d-c9af8c993d74/embedded-ticketing?v=2&backgroundColor=7f7f30&isLightAmbience=true&communityId=edd55aa4-8edd-4605-ae7d-7eb02d798e9b&title=Book+your+ticket+-+Include+the+Javascript+SDK+on+your+page+once%2C+ideal&successMsg=A+confirmation+email+with+the+event+access+link+has+been+sent+to+the+registered+email+ID.+You+will+need+this+link+to+enter+the+event.&screen=TICKET_PURCHASE&href="+encodeURIComponent(window.location.href)),e.setAttribute("width","100%"),e.setAttribute("height","760"),e.setAttribute("type","text/html"),e.setAttribute("frameborder",0),e.setAttribute("allowTransparency","true"),e.style.border="0",t.appendChild(e)}};</script>
+<script async defer>window.onload=function(){var t=document.getElementById("amEmbRegForm");if(t&&t.appendChild){var e=document.createElement("iframe");e.setAttribute("src","https://sc-208189-embedded-reg-form-parent-ticket.test.airmeet.com/widgets/event/5a053390-4272-11ef-8e3d-7932a46d8148/embedded-registration?v=2&backgroundColor=6a4dff&isLightAmbience=false&communityId=edd55aa4-8edd-4605-ae7d-7eb02d798e9b&title=Registration+form&successMsg=A+confirmation+email+with+the+event+access+link+has+been+sent+to+the+registered+email+ID.+You+will+need+this+link+to+enter+the+event.&redirectUrl=https%3A%2F%2Fwww.facebook.com&href="+encodeURIComponent(window.location.href)),e.setAttribute("width","455"),e.setAttribute("height","750"),e.setAttribute("type","text/html"),e.setAttribute("frameborder",0),e.setAttribute("allowTransparency","true"),e.style.border="0",t.appendChild(e)}};function m(a){if(a&&a.origin&&a.data&&a.data.type&&a.data.payload&&a.data.payload.eventName){if("https://sc-208189-embedded-reg-form-parent-ticket.test.airmeet.com"!==a.origin||"amRegFormData"!==a.data.type)return;if("regComplete"===a.data.payload.eventName){const a=new URLSearchParams(window.location.search),t=new URL("https://www.facebook.com"),n=new URLSearchParams(t.search),o=Object.fromEntries(a);for(var e in o)n.append(e,a.get(e));window.location.href=t.protocol+"//"+t.host+t.pathname+"?"+n.toString()}}}window.addEventListener("message",m);</script>
 </body>
 </html>
