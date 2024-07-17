@@ -1,10 +1,10 @@
 <html>
 <body>  
-<h1>DEV EU virtual</h1>
+<h1>DEV EU Ticket embed form</h1>
 <br />
 <div id='amEmbRegForm'></div>
 <br /><br /><br /><br />
 
-<script async defer>window.onload=function(){var t=document.getElementById("amEmbRegForm");if(t&&t.appendChild){var e=document.createElement("iframe");e.setAttribute("src","https://dev.eu.airmeet.com/widgets/event/8b0412e0-3476-11ef-8e1b-c13fc4de5bbc/embedded-registration?v=2&backgroundColor=ff80d5&isLightAmbience=true&communityId=781c5fd4-02d5-4059-8d8e-95620fd1b7a2&title=Registration+form+11111&successMsg=1111111&redirectUrl=https%3A%2F%2Fwww.airmeet.com&href="+encodeURIComponent(window.location.href)),e.setAttribute("width","455"),e.setAttribute("height","750"),e.setAttribute("type","text/html"),e.setAttribute("frameborder",0),e.setAttribute("allowTransparency","true"),e.style.border="0",t.appendChild(e)}};function m(a){if(a&&a.origin&&a.data&&a.data.type&&a.data.payload&&a.data.payload.eventName){if("https://dev.eu.airmeet.com"!==a.origin||"amRegFormData"!==a.data.type)return;if("regComplete"===a.data.payload.eventName){const a=new URLSearchParams(window.location.search),t=new URL("https://www.airmeet.com"),n=new URLSearchParams(t.search),o=Object.fromEntries(a);for(var e in o)n.append(e,a.get(e));window.location.href=t.protocol+"//"+t.host+t.pathname+"?"+n.toString()}}}window.addEventListener("message",m);</script>
+<script async defer>window.onload=function(){var t=document.getElementById("amEmbRegForm");if(t&&t.appendChild){var e=document.createElement("iframe");e.setAttribute("src","https://dev.eu.airmeet.com/widgets/event/d496aff0-4437-11ef-8fe0-5f2fc525b02b/embedded-ticketing?v=2&backgroundColor=a44080&isLightAmbience=true&communityId=781c5fd4-02d5-4059-8d8e-95620fd1b7a2&title=Book+your+ticket+-+Customize+the+form+title+to+be+shown+to+the+attende&successMsg=A+confirmation+email+with+the+event+access+link+has+been+sent+to+the+registered+email+ID.+You+will+need+this+link+to+enter+the+event.&screen=TICKET_PURCHASE&href="+encodeURIComponent(window.location.href)),e.setAttribute("width","900"),e.setAttribute("height","900"),e.setAttribute("type","text/html"),e.setAttribute("frameborder",0),e.setAttribute("allowTransparency","true"),e.style.border="0",t.appendChild(e)}};</script>
 </body>
 </html>
