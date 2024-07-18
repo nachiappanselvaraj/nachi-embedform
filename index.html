@@ -1,10 +1,10 @@
 <html>
 <body>  
-<h1>beta - Event - js UTM</h1>
+<h1>beta - hybrid Event - js UTM</h1>
 <br />
 <div id='amEmbRegForm'></div>
 <br /><br /><br /><br />
 
-<script async defer>window.onload=function(){var t=document.getElementById("amEmbRegForm");if(t&&t.appendChild){var e=document.createElement("iframe");e.setAttribute("src","https://beta.airmeet.com/widgets/event/276a8080-44e7-11ef-815b-bd484df6c9ef/embedded-registration?v=2&backgroundColor=ff80c3&isLightAmbience=true&communityId=b522c7c3-8188-4ad1-99d8-41b343aad2fc&title=Registration+form+1111111111111111&successMsg=A+confirmation+email+with+the+event+access+link+has+been+sent+to+the+registered+email+ID.+You+will+need+this+link+to+enter+the+event.&redirectUrl=https%3A%2F%2Fwww.facebook.com&href="+encodeURIComponent(window.location.href)),e.setAttribute("width","100%"),e.setAttribute("height","810"),e.setAttribute("type","text/html"),e.setAttribute("frameborder",0),e.setAttribute("allowTransparency","true"),e.style.border="0",t.appendChild(e)}};function m(a){if(a&&a.origin&&a.data&&a.data.type&&a.data.payload&&a.data.payload.eventName){if("https://beta.airmeet.com"!==a.origin||"amRegFormData"!==a.data.type)return;if("regComplete"===a.data.payload.eventName){const a=new URLSearchParams(window.location.search),t=new URL("https://www.facebook.com"),n=new URLSearchParams(t.search),o=Object.fromEntries(a);for(var e in o)n.append(e,a.get(e));window.location.href=t.protocol+"//"+t.host+t.pathname+"?"+n.toString()}}}window.addEventListener("message",m);</script>
+<script async defer>window.onload=function(){var t=document.getElementById("amEmbRegForm");if(t&&t.appendChild){var e=document.createElement("iframe");e.setAttribute("src","https://beta.airmeet.com/widgets/event/e5d2fe10-44ee-11ef-90ee-657e018f5b22/embedded-ticketing?v=2&backgroundColor=ffa680&isLightAmbience=true&communityId=b522c7c3-8188-4ad1-99d8-41b343aad2fc&title=Book+your+ticket+-a+asd&successMsg=A+confirmation+email+with+the+event+access+link+has+been+sent+to+the+registered+email+ID.+You+will+need+this+link+to+enter+the+event.&screen=TICKET_PURCHASE&href="+encodeURIComponent(window.location.href)),e.setAttribute("width","100%"),e.setAttribute("height","960"),e.setAttribute("type","text/html"),e.setAttribute("frameborder",0),e.setAttribute("allowTransparency","true"),e.style.border="0",t.appendChild(e)}};</script>
 </body>
 </html>
