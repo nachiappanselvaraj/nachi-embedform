@@ -1,10 +1,10 @@
 <html>
 <body>  
-<h1>Final - DEV EU - inperson - js</h1>
+<h1>OFF - Final - DEV EU - inperson - js</h1>
 <br />
 <div id='amEmbRegForm'></div>
 <br /><br /><br /><br />
 
-<script async defer>window.onload=function(){var t=document.getElementById("amEmbRegForm");if(t&&t.appendChild){var e=document.createElement("iframe");e.setAttribute("src","https://dev.eu.airmeet.com/widgets/event/3009ef60-5319-11ef-ade6-8b7eb20bc626/embedded-registration?v=2&backgroundColor=9580ff&isLightAmbience=false&communityId=bbee44db-a312-46d3-bf88-9d3586ed77f8&title=Registration+form&successMsg=qwerty&waitlistedMsg=123456&rejectedMsg=000000&redirectUrl=https%3A%2F%2Fwww.facebook.com&href="+encodeURIComponent(window.location.href)),e.setAttribute("width","100%"),e.setAttribute("height","798"),e.setAttribute("type","text/html"),e.setAttribute("frameborder",0),e.setAttribute("allowTransparency","true"),e.style.border="0",t.appendChild(e)}};function m(a){if(a&&a.origin&&a.data&&a.data.type&&a.data.payload&&a.data.payload.eventName){if("https://dev.eu.airmeet.com"!==a.origin||"amRegFormData"!==a.data.type)return;if("regComplete"===a.data.payload.eventName){const a=new URLSearchParams(window.location.search),t=new URL("https://www.facebook.com"),n=new URLSearchParams(t.search),o=Object.fromEntries(a);for(var e in o)n.append(e,a.get(e));window.location.href=t.protocol+"//"+t.host+t.pathname+"?"+n.toString()}}}window.addEventListener("message",m);</script>
+<iframe height="798" width="100%" src="https://dev.eu.airmeet.com/widgets/event/3009ef60-5319-11ef-ade6-8b7eb20bc626/embedded-registration?v=2&backgroundColor=9580ff&isLightAmbience=false&communityId=bbee44db-a312-46d3-bf88-9d3586ed77f8&title=Registration+form&successMsg=qwerty&waitlistedMsg=123456&rejectedMsg=000000" frameborder="0"></iframe>
 </body>
 </html>
